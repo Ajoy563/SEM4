@@ -32,7 +32,7 @@ int* maxmin(int x, int y)
         int* arr2=maxmin(x,(x+y)/2);
         int* arr3=maxmin(((x+y)/2)+1,y);
         arr[0]=MAX(arr2[0],arr3[0]);
-        arr[1]=MIN(arr2[0],arr3[1]);
+        arr[1]=MIN(arr2[1],arr3[1]);
         return arr;
     }
 }
