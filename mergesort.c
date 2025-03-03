@@ -12,7 +12,7 @@ void merge(int p, int q, int r) {
 	int* left=(int*)malloc((n1+2)*sizeof(int));
 	int* right=(int*)malloc((n2+2)*sizeof(int));
 	for(i=0;i<n1;i++) {
-		left[i]=arr[p+i];
+		left[i]=arr[p+i];         
 	}
 	for(j=0; j<n2; j++) {
 		right[j]=arr[q+j+1];
