@@ -41,9 +41,9 @@ int main() {
     printf("Enter size of array : ");
     scanf("%d",&n);
     num=(int*)malloc(n*sizeof(int));
-    printf("Enter elements with space: ");
+    srand(time(0);
     for(int i=0;i<n;i++) {
-        scanf("%d",&num[i]);
+        num[i]=rand()%n;
     }
     int* ans =(int*)malloc(2*sizeof(int));
     ans=maxmin(0,n-1);
