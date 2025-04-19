@@ -7,7 +7,7 @@ int binary_search(int arr[], int lb, int ub, int x) {
 	if(lb>ub)
 		return -1;
 	else {
-		mid=(lb+ub)/2;
+		mid = lb + (ub - lb)/2;
 		if(arr[mid]==x)
 			return mid;
 		else if(arr[mid] > x)
